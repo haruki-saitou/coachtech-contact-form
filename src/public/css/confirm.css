@@ -1,0 +1,84 @@
+        .confirm-container {
+            max-width: 700px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .confirm-heading {
+            font-size: 2rem;
+            color: #333;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .confirm-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+
+        .confirm-table th, .confirm-table td {
+            padding: 15px 10px;
+            border-bottom: 1px solid #eee;
+            text-align: left;
+        }
+
+        .confirm-table th {
+            width: 30%;
+            background-color: #f8f8f8;
+            color: #555;
+            font-weight: 600;
+        }
+
+        .confirm-table td {
+            width: 70%;
+            color: #333;
+            white-space: pre-wrap; /* 内容の改行を保持 */
+        }
+
+        .confirm-actions {
+            text-align: center;
+        }
+
+        .confirm-button {
+            display: inline-block;
+            padding: 12px 40px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.1s;
+        }
+
+        .confirm-button:hover {
+            background-color: #0056b3;
+            transform: translateY(-1px);
+        }
+
+        .back-link {
+            display: block;
+            margin-top: 15px;
+            color: #6c757d;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .back-link:hover {
+            color: #495057;
+        }
+
+        .confirm-image {
+            max-width: 100%;
+            max-height: 200px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            object-fit: contain;
+        }

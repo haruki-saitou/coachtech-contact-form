@@ -1,0 +1,147 @@
+/*
+ * 共通レイアウト (app.blade.php) 用のスタイル
+ */
+
+/*
+ * ユーザー提供の共通リセットとフォント指定
+ */
+* {
+    /* ユーザーが指定したフォントファミリーを適用 */
+    font-family: sans-serif, "Segoe UI", Tahoma, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+/* ベーススタイル */
+body {
+    margin: 0;
+    line-height: 1.6;
+    color: #2c3e50;
+    min-height: 100vh;
+    background-color: #f8f8f8; /* 全体の背景を薄いグレーに調整 */
+}
+
+/*
+ * ヘッダーとナビゲーションのスタイル (ユーザー提供)
+ */
+.header {
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    padding-bottom: 0px;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px 10px;
+    max-width: 1230px;
+}
+
+.header__inner-logo {
+    color: #393838;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+    justify-content: center;
+    display: flex;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center; /* ナビゲーション全体を中央に配置 */
+}
+
+.header-nav__list {
+    display: flex;
+    list-style: none;
+    margin: 0 20px;
+    padding: 0 20px;
+}
+
+.header-nav__item {
+    margin: 0 15px; /* マージンを少し調整 */
+    padding: 0;
+}
+
+.header-nav__link {
+    color: #373636;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+    padding: 5px 0; /* ホバー時に下線がつきやすいように */
+}
+
+.header-nav__link:hover {
+    color: #727070;
+    text-decoration-line: underline;
+}
+
+.header-nav__button {
+    background-color: #5d6165;
+    color: white;
+    font-weight: bold;
+    font-size: 0.8em;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.header-nav__button:hover {
+    background-color: #343536;
+}
+
+/* メインコンテンツエリア */
+main {
+    padding: 30px 20px;
+    max-width: 1230px;
+    margin: 0 auto;
+    flex-grow: 1;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .header__inner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        padding: 15px 10px;
+    }
+
+    .header-nav {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .header-nav__list {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 10px 0;
+        width: 100%;
+        border-top: 1px solid #eee;
+    }
+
+    .header-nav__item {
+        margin: 5px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .header-nav__link {
+        display: block;
+        padding: 8px;
+    }
+
+    .header-nav__button {
+        width: 100%;
+        padding: 10px 20px;
+        margin-top: 10px;
+    }
+}

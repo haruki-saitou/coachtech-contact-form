@@ -1,0 +1,135 @@
+        .contact-form__content {
+            max-width: 700px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .contact-form__heading {
+            font-size: 2rem;
+            color: #333;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .form__group {
+            margin-bottom: 25px;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .form__group--title {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .form__label {
+            font-size: 1rem;
+            color: #555;
+            font-weight: 600;
+            margin-right: 15px;
+        }
+
+        .form__label--required {
+            background-color: #dc3545;
+            color: white;
+            font-size: 0.75rem;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: normal;
+        }
+
+        .form__group--input {
+            width: 100%;
+        }
+
+        .form__input,
+        textarea.form__input {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 1rem;
+            box-sizing: border-box;
+            transition: border-color 0.2s;
+        }
+
+        .form__input:focus,
+        textarea.form__input:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+
+        .name-fields input {
+            flex: 1;
+        }
+
+        .gender-radio label {
+            cursor: pointer;
+            margin-right: 20px;
+        }
+
+        .form__input--file {
+            padding: 8px 0;
+        }
+
+        .form__error-message {
+            color: #dc3545;
+            font-size: 0.85rem;
+            margin-top: 5px;
+        }
+
+        .form__example-message {
+            font-size: 0.8em;
+            color: #888;
+            margin-top: 5px;
+        }
+
+        .form__button {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .form__button--submit {
+            padding: 12px 40px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.1s;
+        }
+
+        .form__button--submit:hover {
+            background-color: #0056b3;
+            transform: translateY(-1px);
+        }
+
+        /* メッセージ表示 */
+        .form__success,
+        .form__error {
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .form__success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .form__error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }

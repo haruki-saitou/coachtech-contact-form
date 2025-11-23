@@ -1,0 +1,75 @@
+        .history-container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .history-heading {
+            font-size: 2rem;
+            color: #333;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .contact-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .contact-item {
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            padding: 15px;
+            background-color: #fafafa;
+            transition: box-shadow 0.2s;
+        }
+
+        .contact-item:hover {
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        .contact-meta {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9rem;
+            color: #777;
+            margin-bottom: 10px;
+        }
+
+        .contact-content {
+            font-size: 1rem;
+            color: #555;
+            white-space: pre-wrap; /* 改行を保持 */
+            max-height: 80px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            border-left: 3px solid #007bff;
+            padding-left: 10px;
+            margin-top: 10px;
+        }
+
+        .no-contacts {
+            text-align: center;
+            color: #888;
+            padding: 40px 0;
+            font-size: 1.1rem;
+        }
+
+        .contact-details {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .contact-image-link {
+            font-size: 0.9rem;
+            color: #007bff;
+            text-decoration: underline;
+            margin-top: 5px;
+            display: block;
+        }
